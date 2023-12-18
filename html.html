@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* CSS */
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      header,
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      .main-content {
+        display: flex;
+        justify-content: space-between;
+        flex-grow: 1;
+      }
+
+      .left-page,
+      .right-page {
+        flex-basis: 20%;
+        
+        padding: 10px;
+      }
+
+      .body-content {
+        flex-basis: 58%;
+        background-color: pink;
+        padding: 10px;
+      }
+      .page {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        border-style: double;
+        background-color: greenyellow;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Header</h1>
+    </header>
+
+    <div class="main-content">
+      <div class="left-page">
+        Left Page
+        <div>
+          <a class="page" href="https://www.google.com/" target="_blank">page1</a>
+          <a class="page" href="https://www.google.com/" target="_blank">page2</a>
+          <a class="page" href="https://www.google.com/" target="_blank">page3</a>
+          <a class="page" href="https://www.google.com/" target="_blank">page4</a>
+        </div>
+      </div>
+
+      <div class="body-content"><h1>Body Page</h1>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis sapiente voluptate tenetur laboriosam eveniet natus ratione amet ullam consequatur consectetur laudantium ea deleniti nulla, quos qui cupiditate aliquam labore facere.</div>
+      </div>
+
+      <div class="right-page">Right Page
+        <img src="rec/FC_Barcelona_logo.png" alt="">
+      </div>
+    </div>
+
+    <footer>
+      <h1>Footer</h1>
+    </footer>
+  </body>
+</html>
